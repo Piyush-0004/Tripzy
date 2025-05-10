@@ -1,1 +1,1 @@
-Clone of airbnb 
+This is my major project - Tripzy
