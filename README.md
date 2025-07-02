@@ -91,8 +91,6 @@ Example flow:
 *  Add payment gateway (Stripe/Razorpay)
 *  Add geolocation support via Mapbox or Google Maps
 *  Add availability calendar for bookings
-*  Add unit and integration tests (Jest/Supertest)
-*  Add multi-language support
 
 
 # Contributing
