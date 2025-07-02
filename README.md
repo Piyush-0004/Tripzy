@@ -31,7 +31,7 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/tripzy.git
+git clone https://github.com/Piyush-0004/Tripzy.git
 cd tripzy
 ```
 
