@@ -13,15 +13,17 @@
 *  **Reviews System** – Logged-in users can leave reviews on any listing.
 *  **Owner Protection** – Only the original creator of a listing can edit or delete it.
 
-##  Tech Stack
+#  Tech Stack
 
-| Layer             | Tech Used                    |
-| ----------------- | ---------------------------- |
-| **Frontend**      | HTML, CSS, JavaScript, EJS   |
-| **Backend**       | Node.js, Express.js          |
-| **Database**      | MongoDB (via Mongoose)       |
-| **Auth**          | Passport.js, express-session |
-| **Image Hosting** | Cloudinary, Multer           |
+Frontend: HTML, CSS, JavaScript, EJS
+
+Backend: Node.js, Express.js
+
+Database: MongoDB with Mongoose
+
+Authentication: Express-session & Passport.js
+
+File Upload: Multer + Cloudinary
 
 
 ##  Setup Instructions
@@ -72,7 +74,7 @@ Visit: `http://localhost:3000`
 * Middleware handles route protection and user validation.
 
 
-##  Cloudinary Image Upload
+#  Cloudinary Image Upload
 
 Images are uploaded through **Multer** and stored in **Cloudinary**. Only the image URLs are stored in MongoDB. Cloudinary's CDN serves the images to ensure fast and optimized delivery.
 
