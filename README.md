@@ -1,4 +1,4 @@
-         Tripzy — Airbnb-like Travel Listing Platform
+#         Tripzy — Airbnb-like Travel Listing Platform
 
 **Tripzy** is a full-stack travel website inspired by Airbnb. It allows users to list properties, upload images, write reviews, and manage their listings with full authentication and authorization support.
 
