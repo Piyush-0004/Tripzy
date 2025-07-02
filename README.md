@@ -15,15 +15,15 @@
 
 #  Tech Stack
 
-Frontend: HTML, CSS, JavaScript, EJS
+*  **Frontend**: HTML, CSS, JavaScript, EJS
 
-Backend: Node.js, Express.js
+*  **Backend**: Node.js, Express.js
 
-Database: MongoDB with Mongoose
+*  **Database**: MongoDB with Mongoose
 
-Authentication: Express-session & Passport.js
+*  **Authentication**: Express-session & Passport.js
 
-File Upload: Multer + Cloudinary
+*  **File Upload**: Multer + Cloudinary
 
 
 ##  Setup Instructions
