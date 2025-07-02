@@ -93,7 +93,7 @@ Example flow:
 *  Add availability calendar for bookings
 
 
-# Contributing
+## Contributing
 
 Have ideas or improvements?
 Feel free to fork the repo and open a pull request.
