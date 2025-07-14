@@ -1,0 +1,31 @@
+<%# new %> 
+
+<% layout("/layouts/boilerplate") %>    
+
+<div class="container mt-5">
+  <h2>Booking: <%= listing.title %></h2>
+  <p><strong>Location:</strong> <%= listing.location %>, <%= listing.country %></p>
+  <p><strong>Price:</strong> ₹<%= listing.price.toLocaleString("en-IN") %></p>
+
+  <form action="/bookings/<%= listing._id %>/pay" method="POST" class="mt-4">
+    <h4>Dummy Payment Info</h4>
+
+    <div class="mb-3">
+      <label class="form-label">Card Number</label>
+      <input type="text" class="form-control" placeholder="1234 5678 9012 3456" required />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Expiry</label>
+      <input type="month" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">CVV</label>
+      <input type="password" maxlength="3" class="form-control" required />
+    </div>
+
+    <button type="submit" class="btn btn-success">Pay Now</button>
+    <a href="/listings/<%= listing._id %>" class="btn btn-secondary ms-2">Cancel</a>
+  </form>
+</div>

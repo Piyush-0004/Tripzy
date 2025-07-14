@@ -16,6 +16,16 @@
        <p class="card-text"> &#8377; <%= listing.price.toLocaleString("en-IN") %> </p>
        <p class="card-text"> <%= listing.location %> </p>
        <p class="card-text"> <%= listing.country %> </p>
+
+       <!-- Book Now Button    new  -->   
+        <% if (currUser && !listing.owner._id.equals(currUser._id)) { %>
+        <form method="GET" action="/bookings/<%= listing._id %>/pay">
+        <button class="btn btn-success mt-3">Book Now</button>
+        </form>
+        <% } else if (!currUser) { %>
+        <a href="/login" class="btn btn-warning mt-3 w-100">Login to Book</a>
+        <% } %>
+
      </div>
     </div>
 
