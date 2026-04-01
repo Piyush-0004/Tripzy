@@ -32,7 +32,7 @@ main()
     console.log(err);
  });
 
-async function main() {
+async function main()  {
     await mongoose.connect(dbUrl);
 }
 
