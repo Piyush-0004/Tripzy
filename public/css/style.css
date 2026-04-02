@@ -1,17 +1,19 @@
 body{
     font-family: "Plus Jakarta Sans", sans-serif !important;
-    display:flex;
-    flex-direction: column;
+    /*display:flex;
+    flex-direction: column;*/
     min-height:100vh;
+    background: linear-gradient(135deg, #f8f9fa, #eef1f5);
 }
 
 .container{
-    flex: 1 ;
+    min-height: 100%;
 }
 
 .navbar{
-    height:5rem;
+    min-height: 5rem;
     background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .fa-compass{
@@ -47,18 +49,20 @@ body{
 
 .f-info {
     text-align: center;
-    height: 8rem;
+    min-height: 8rem;
     background-color: #ebebeb;  
     display: flex;  
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: space-evenly;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* Cards */
 .listing-card{
     border: none !important ;
     margin-bottom: 2rem;
+    background: #ffffff !important; 
+  border-radius: 15px !important;
 }
 
 .card-img-top{
@@ -77,6 +81,15 @@ body{
 
 .listing-link{
     text-decoration: none;
+}
+
+.listing-card {
+    transition: all 0.3s ease;
+}
+
+.listing-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 /* Card Effect */
@@ -103,7 +116,16 @@ body{
 
 /* Show Page */
 .show-img{
-    height:30vh;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+}
+
+.show-img:hover {
+  filter: brightness(85%) contrast(105%);
+   cursor: pointer;
 }
 
 .btns{
@@ -115,8 +137,18 @@ body{
     padding-right: 0;
 }
 
+.btn-success {
+  background: linear-gradient(45deg, #28a745, #5cd65c);
+  border: none;
+}
+
+.btn-success:hover {
+  opacity: 0.9;
+}
+
 /* Map */
 #map { 
     height: 400px;
-    width:  80vh;
+    width: 100%;
+    margin-bottom: 10px;
  }
