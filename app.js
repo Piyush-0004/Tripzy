@@ -51,7 +51,7 @@ const store = MongoStore.create({
     touchAfter: 24*3600,
 });
 
-store.on("error", () => {
+store.on("error", (err) => {
     console.log("ERROR in MONGO SESSION STORE", err);
 });
 
@@ -101,6 +101,12 @@ app.use((req,res,next) => {
     res.send(registeredUser);
 });*/
 
+// route route
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
+
+/* ROUTES*/
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/bookings", bookingRouter);     // new
